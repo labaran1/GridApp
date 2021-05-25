@@ -1,11 +1,11 @@
-import {} from "../types";
+import { SET_AUTHENTICATED } from "../types";
 
 const AppReducer = (state, action) => {
   switch (action.type) {
-    case "": {
+    case SET_AUTHENTICATED: {
       return {
         ...state,
-        imageHasLoad: action.payload.val,
+        isAuthenticated: action.payload.val,
       };
     }
 
