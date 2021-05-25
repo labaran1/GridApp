@@ -1,0 +1,22 @@
+[
+  {
+    "shape": "Oval",
+    "colors": ["red", "blue", "green", "yellow", "violet", "pink"]
+  },
+  {
+    "shape": "Round",
+    "colors": ["red", "blue", "green", "yellow", "violet", "pink"]
+  },
+  {
+    "shape": "Triangle",
+    "colors": ["red", "blue", "green", "yellow", "violet", "pink"]
+  },
+  {
+    "shape": "Square",
+    "colors": ["red", "blue", "green", "yellow", "violet", "pink"]
+  },
+  {
+    "shape": "Rectangle",
+    "colors": ["red", "blue", "green", "yellow", "violet", "pink"]
+  }
+]
