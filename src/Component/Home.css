@@ -1,0 +1,120 @@
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav span {
+  color: red;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.ShapeContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.ShapeContainer div {
+  display: flex;
+}
+
+.ShapeContainer input {
+  visibility: hidden;
+}
+.ShapeContainer input:checked + label {
+  background: steelblue;
+}
+.ShapeContainer div label {
+  margin: 20px;
+  margin-left: -10px;
+  background: gray;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.colorToSelect {
+  display: flex;
+  margin: 20px;
+}
+
+.colorToSelect input {
+  visibility: hidden;
+}
+
+.colorToSelect input:checked + label {
+  border: 4px solid black;
+}
+.colorToSelect label {
+  /* padding: 5px; */
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.selectedTitle {
+  margin: 20px;
+}
+
+/* shapess */
+
+.displayShapes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+.shapeBox {
+  width: 350px;
+  height: 250px;
+  background: #fff;
+  position: relative;
+  margin: 15px;
+}
+
+.Square {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: 20px 70px;
+}
+
+.Round {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: 20px 70px;
+  border-radius: 50%;
+}
+
+.Rectangle {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  margin: 20px 70px;
+}
+
+.Oval {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  margin: 20px 70px;
+  border-radius: 100px/80px;
+}
+
+.Triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 50px 120px;
+  background: #fff;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  /* border-bottom: 100px solid blue; */
+}

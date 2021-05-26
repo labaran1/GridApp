@@ -1,1 +1,2 @@
 export const SET_AUTHENTICATED = "SET_AUTHENTICATED";
+export const SET_SHAPES = "SET_SHAPES";

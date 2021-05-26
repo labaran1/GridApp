@@ -1,28 +1,27 @@
-import { SET_AUTHENTICATED } from "../types";
+import { SET_AUTHENTICATED, SET_SHAPES } from "../types";
 import AppContext from "./AppContext";
 import AppReducer from "./AppReducer";
 import { useReducer, useEffect } from "react";
-import { Redirect } from "react-router-dom";
 import data from "../../data.json";
 
 const AppState = (props) => {
   const initialState = {
     isAuthenticated: false,
+    shapes: [],
+    defaultColors: ["red", "blue", "green", "yellow", "violet", "pink"],
   };
 
   useEffect(() => {
-    console.log(data[0]);
+    setShapes(data);
   }, []);
 
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   const login = () => {
     setAuthenticated(true);
-    // localStorage.setItem("isAuthenticated", true);
   };
   const logout = () => {
     setAuthenticated(false);
-    // localStorage.setItem("isAuthenticated", false);
   };
   const setAuthenticated = (value) => {
     dispatch({
@@ -33,12 +32,24 @@ const AppState = (props) => {
     });
   };
 
+  const setShapes = (value) => {
+    dispatch({
+      type: SET_SHAPES,
+      payload: {
+        val: value,
+      },
+    });
+  };
+
   return (
     <AppContext.Provider
       value={{
         isAuthenticated: state.isAuthenticated,
+        shapes: state.shapes,
+        defaultColors: state.defaultColors,
         login,
         logout,
+        setShapes,
       }}
     >
       {props.children}

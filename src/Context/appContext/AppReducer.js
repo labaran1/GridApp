@@ -1,4 +1,4 @@
-import { SET_AUTHENTICATED } from "../types";
+import { SET_AUTHENTICATED, SET_SHAPES } from "../types";
 
 const AppReducer = (state, action) => {
   switch (action.type) {
@@ -6,6 +6,12 @@ const AppReducer = (state, action) => {
       return {
         ...state,
         isAuthenticated: action.payload.val,
+      };
+    }
+    case SET_SHAPES: {
+      return {
+        ...state,
+        shapes: action.payload.val,
       };
     }
 
