@@ -6,8 +6,8 @@ export default function Login() {
   const { login } = appContext;
 
   return (
-    <div>
-      Welcome
+    <div className={"loginContainer"}>
+      <h1>Welcome</h1>
       <button onClick={() => login()}>login</button>
     </div>
   );

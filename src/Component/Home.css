@@ -1,6 +1,18 @@
 a {
   text-decoration: none;
 }
+
+.loginContainer {
+  margin: 200px 50%;
+}
+.loginContainer button {
+  padding: 10px;
+  border-radius: 20px;
+  background: blue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 nav {
   display: flex;
   justify-content: space-between;

@@ -5,13 +5,8 @@ import { useReducer, useEffect } from "react";
 import data from "../../data.json";
 
 const AppState = (props: any) => {
-  // interface initS {
-  //   isAuthenticated: boolean;
-  //   shapes: string[];
-  //   defaultColors: string[];
-  // }
   const initialState = {
-    isAuthenticated: false,
+    isAuthenticated: true,
     shapes: [],
     defaultColors: ["red", "blue", "green", "yellow", "violet", "pink"],
   };
