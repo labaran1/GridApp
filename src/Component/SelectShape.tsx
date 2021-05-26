@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AppContext from "../Context/appContext/AppContext";
 
-export default function SelechShape({ handleClick }: any) {
+export default function SelectShape({ handleClick }: any) {
   const appContext = useContext(AppContext);
   const { shapes } = appContext;
 

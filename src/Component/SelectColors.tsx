@@ -25,7 +25,9 @@ export default function SelectColors({ title, handleChange }: any) {
           </Fragment>
         ))}
       </div>
-      <h3 className={"selectedTitle"}>{title}</h3>
+      <h3 className={"selectedTitle"} data-testid="shapeTitle">
+        {title}
+      </h3>
     </div>
   );
 }

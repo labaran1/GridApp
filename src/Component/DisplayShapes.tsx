@@ -8,7 +8,7 @@ export default function DisplayShapes({
     <div className={"displayShapes"}>
       {selectedShapeName.map((sha: any) =>
         selectedShapeColors.map((col: any) => (
-          <div className={"shapeBox"} key={sha}>
+          <div className={"shapeBox"} key={sha + col}>
             <span
               data-testid={sha}
               className={sha}
