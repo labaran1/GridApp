@@ -1,6 +1,6 @@
 import { SET_AUTHENTICATED, SET_SHAPES } from "../types";
 
-const AppReducer = (state, action) => {
+const AppReducer = (state: any, action: any) => {
   switch (action.type) {
     case SET_AUTHENTICATED: {
       return {

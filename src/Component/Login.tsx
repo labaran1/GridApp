@@ -7,7 +7,7 @@ export default function Login() {
 
   return (
     <div>
-      login
+      Welcome
       <button onClick={() => login()}>login</button>
     </div>
   );

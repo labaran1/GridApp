@@ -4,7 +4,12 @@ import AppReducer from "./AppReducer";
 import { useReducer, useEffect } from "react";
 import data from "../../data.json";
 
-const AppState = (props) => {
+const AppState = (props: any) => {
+  // interface initS {
+  //   isAuthenticated: boolean;
+  //   shapes: string[];
+  //   defaultColors: string[];
+  // }
   const initialState = {
     isAuthenticated: false,
     shapes: [],
@@ -23,7 +28,7 @@ const AppState = (props) => {
   const logout = () => {
     setAuthenticated(false);
   };
-  const setAuthenticated = (value) => {
+  const setAuthenticated = (value: boolean) => {
     dispatch({
       type: SET_AUTHENTICATED,
       payload: {
@@ -32,7 +37,7 @@ const AppState = (props) => {
     });
   };
 
-  const setShapes = (value) => {
+  const setShapes = (value: any) => {
     dispatch({
       type: SET_SHAPES,
       payload: {
