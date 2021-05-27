@@ -129,3 +129,9 @@ nav span {
   border-right: 50px solid transparent;
   /* border-bottom: 100px solid blue; */
 }
+
+@media (max-width: 730px) {
+  .displayShapes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
