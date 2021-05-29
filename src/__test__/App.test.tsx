@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
@@ -29,10 +30,11 @@ test("Full app Navigation", () => {
       <TestComponent />
     </AppState>
   );
+  expect(screen.getByText("Logout")).toBeInTheDocument;
+  userEvent.click(screen.getByText("Logout"));
 
   expect(screen.getByText("login")).toBeInTheDocument;
   userEvent.click(screen.getByText("login"));
+
   expect(screen.getByText("Logout")).toBeInTheDocument;
-  userEvent.click(screen.getByText("Logout"));
-  expect(screen.getByText("login")).toBeInTheDocument;
 });
