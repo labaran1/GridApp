@@ -1,5 +1,6 @@
+/* eslint-disable jest/valid-expect */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import { useLocation, Router } from "react-router-dom";
